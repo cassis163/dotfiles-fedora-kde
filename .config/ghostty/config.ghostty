@@ -1,1 +1,33 @@
 command = zsh
+
+# Font
+font-family = "JetBrainsMono Nerd Font"
+
+# Theme
+theme = Dracula
+
+# Vim-like pane splitting
+keybind = ctrl+a>h=new_split:left
+keybind = ctrl+a>j=new_split:down
+keybind = ctrl+a>k=new_split:up
+keybind = ctrl+a>l=new_split:right
+
+# Vim-like pane navigation
+keybind = ctrl+w>h=goto_split:left
+keybind = ctrl+w>j=goto_split:down
+keybind = ctrl+w>k=goto_split:up
+keybind = ctrl+w>l=goto_split:right
+
+# Pane management
+keybind = ctrl+w>q=close_surface
+keybind = ctrl+w>z=toggle_split_zoom
+keybind = ctrl+w>=equalize_splits
+
+# Resize panes, Vim-ish
+keybind = ctrl+w>shift+h=resize_split:left,20
+keybind = ctrl+w>shift+j=resize_split:down,20
+keybind = ctrl+w>shift+k=resize_split:up,20
+keybind = ctrl+w>shift+l=resize_split:right,20
+
+# Reload config
+keybind = ctrl+a+r=reload_config
